@@ -5,27 +5,44 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <title>Программист Junior Java Developer</title>
+        <link rel="stylesheet" href="selectors.css">
     </head>
+
     <body>
-        <img src="Аватарка.jpeg" alt="аватарка" width="150">
-        <div class="info">
-        <h1>Карпов Олег Алексеевич</h1>
-        <p>Мужчина,30 лет,родился 17 августа 1991 года</p>
-        <p>Контакты:<br>
-            Телефон: 7950-000-00-00<br>
-            Почта: wanone@mail.ru
-        </p>
-        <p>Начинающий и амбициозный  java junior разработчик в поисках интересной и перспективной работы</p>
-         </div>
-         <nav class="contact">
-        <p>Список социальных сетей:<br>
+        <div class="container">
+        <div class="info-text border">
+            <img src="Аватарка.jpeg" alt="аватарка" class="avatar">
+
+            <div class="info">
+                <div id="name">
+                 <h1>Карпов Олег Алексеевич</h1>
+                 </div>
+             <p>Мужчина, 30 лет, родился 17 августа 1991 года</p>
+             <p>Контакты:<br>
+             Телефон: 7950-000-00-00<br>
+             Почта: wanone@mail.ru
+             </p>
+        
+            <div id="I">
+                 <p>Начинающий и амбициозный java junior разработчик в поисках интересной и перспективной работы.</p>
+            </div>
+            </div>
+        </div>
+
+        <nav class="contact border">
+        <div id="name">
+        <h3>Список социальных сетей:</h3>
+        </div>
         <a href="https://instagram.com/olegaik" target="_blank"> Инстаграмм</a><strong> |</strong>
         <a href="https://t.me/oleg91k" target="_blank">Телеграмм</a>
         </p>
         </nav>
 
+        <div class="skills border">
+        <div id="name">
         <h3>Ключевые навыки:</h3>
-        <ol>
+         </div>
+        <ol class="list">
             <li>Java</li>
             <li>html/css</li>
             <li>SQL</li>
@@ -33,10 +50,13 @@
             <li>Spring framework</li>
             <li>Английский язык</li>
         </ol>
+    </div>
 
-        <article class="placework">
+        <article class="placework border">
+        <div id="name">
         <h3>Опыт работы:</h3>
-        <table width="300">
+        </div>
+        <table class="tbl" width="300">
             <thead>
             <tr>
                 <th>Наименовании организации</th>
@@ -71,23 +91,27 @@
         </table>
          </article>
 
-        <nav class="feedback">
-        <h3>Связаться со мной:</h3>
-        <form action="/">
-        <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
+        
+        <form action="/" class="form">
+         <nav class="feedback border">
+         <div id="name">
+         <h3>Связаться со мной:</h3>
         </div>
-        <div>
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-        <div>
+        <div class="formgroup">
+        <label for="names">Ваше имя:</label>
+        <input type="text" id="names" placeholder="Введите имя">
+        </div>
+        <div class="formgroup">
+        <label for="email" >Ваш Email:</label>
+        <input type="email" id="email" placeholder="Введите email" >
+        <div class="formgroup">
          <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="15" rows="10" placeholder="Введите сообщение"></textarea>
+        <textarea id="textarea" cols="15" rows="10" placeholder="Введите сообщение"></textarea>
         </div>
+        <div class="btn">
         <input type="submit" value="Отправить!">
-    </form>
+    </div>
     </nav>
+    </form>
     </body>
 </html>
